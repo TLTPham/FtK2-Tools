@@ -1,5 +1,5 @@
 'use client';
-import { ItemCard } from "@/Cards/_ItemCard";
+import { ItemCard } from "@/components/_ItemCard";
 import { usePopupCard } from "@/app/_PopUpCard/PopupCardProvider";
 
 export function EquipmentEntry({ item, id }) {

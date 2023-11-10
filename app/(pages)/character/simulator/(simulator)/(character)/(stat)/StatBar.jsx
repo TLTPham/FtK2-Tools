@@ -1,7 +1,7 @@
 import "./style.scss";
 import Image from "next/image";
 
-import { StatCard } from "@/Cards/_StatCard";
+import { StatCard } from "@/components/_StatCard";
 import { usePopupCard } from "@/app/_PopUpCard/PopupCardProvider";
 import { statImage } from "@/images/images";
 

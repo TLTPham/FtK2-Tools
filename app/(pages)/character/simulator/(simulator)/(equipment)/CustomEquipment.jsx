@@ -2,7 +2,7 @@
 import "./style.scss";
 import { useSimulator } from "@/app/(pages)/character/simulator/SimulatorProvider";
 import { usePopupCard } from "@/app/_PopUpCard/PopupCardProvider";
-import { ItemCard } from "@/Cards/_ItemCard";
+import { ItemCard } from "@/components/_ItemCard";
 
 export function CustomEquipment() {
   const { equipment, setItemType } = useSimulator();

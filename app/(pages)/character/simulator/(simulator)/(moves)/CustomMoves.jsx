@@ -2,7 +2,7 @@
 import "./style.scss";
 
 import { useSimulator } from "@/app/(pages)/character/simulator/SimulatorProvider";
-import { MoveContent } from "@/Cards/_ItemCard/(type)/(content)/MoveContent";
+import { MoveContent } from "@/components/_ItemCard/(type)/(content)/MoveContent";
 
 export function CustomMoves() {
   const { equipment, equippedCharacter } = useSimulator();

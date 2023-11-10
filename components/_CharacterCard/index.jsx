@@ -1,7 +1,7 @@
 import "./style.scss";
 import { StatBar } from "./(StatBar)/StatBar";
-import { SpecialAbilities } from "@/Cards/_CharacterCard/(SpecialAbilities)/SpecialAbilities";
-import { Equipment } from "@/Cards/_CharacterCard/(Equipment)/Equipment";
+import { SpecialAbilities } from "@/components/_CharacterCard/(SpecialAbilities)/SpecialAbilities";
+import { Equipment } from "@/components/_CharacterCard/(Equipment)/Equipment";
 
 export function CharacterCard({ character, id, removeClick }) {
   return (

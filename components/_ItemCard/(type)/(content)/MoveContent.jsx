@@ -1,4 +1,4 @@
-import { ItemRollContent } from "@/Cards/_ItemCard/(type)/(content)/ItemRollContent";
+import { ItemRollContent } from "@/components/_ItemCard/(type)/(content)/ItemRollContent";
 
 export function MoveContent(props) {
   let { item } = props;

@@ -4,7 +4,7 @@ import "./style.scss";
 import toast from "react-hot-toast";
 import { useState } from "react";
 
-import { CharacterCard } from "@/Cards/_CharacterCard";
+import { CharacterCard } from "@/components/_CharacterCard";
 import { character } from "@/stats/character/character";
 
 export default function Page() {

@@ -1,8 +1,8 @@
 'use client';
 import "./style.scss";
-import { ItemInfo } from "@/Cards/_ItemCard/(type)/ItemInfo";
-import { WeaponInfo } from "@/Cards/_ItemCard/(type)/WeaponInfo";
-import { ConsumableInfo } from "@/Cards/_ItemCard/(type)/ConsumableInfo";
+import { ItemInfo } from "@/components/_ItemCard/(type)/ItemInfo";
+import { WeaponInfo } from "@/components/_ItemCard/(type)/WeaponInfo";
+import { ConsumableInfo } from "@/components/_ItemCard/(type)/ConsumableInfo";
 
 export function ItemCard({ item, className, removeClick }) {
   return (

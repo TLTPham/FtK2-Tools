@@ -3,7 +3,7 @@ import "./style.scss";
 
 import { CombatBar } from "@/app/(pages)/character/simulator/(simulator)/(character)/(combat)/CombatBar";
 import { useSimulator } from "@/app/(pages)/character/simulator/SimulatorProvider";
-import { SpecialAbilities } from "@/Cards/_CharacterCard/(SpecialAbilities)/SpecialAbilities";
+import { SpecialAbilities } from "@/components/_CharacterCard/(SpecialAbilities)/SpecialAbilities";
 import { character } from "@/stats/character/character";
 import { CustomStatBar } from "@/app/(pages)/character/simulator/(simulator)/(character)/(stat)/StatBar";
 

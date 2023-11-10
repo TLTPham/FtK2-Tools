@@ -1,4 +1,4 @@
-import { AbilityCard } from "@/Cards/_AbilityCard";
+import { AbilityCard } from "@/components/_AbilityCard";
 import { specialAbilities } from "@/stats/misc/specialAbilities";
 
 export default function Page() {

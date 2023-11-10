@@ -2,7 +2,7 @@ import "./style.scss";
 import { TraitContent } from "./(content)/TraitContent";
 import { ItemRollContent } from "./(content)/ItemRollContent";
 import { BaseStatsContent } from "./(content)/BaseStatContent";
-import { MoveContent } from "@/Cards/_ItemCard/(type)/(content)/MoveContent";
+import { MoveContent } from "@/components/_ItemCard/(type)/(content)/MoveContent";
 
 export function WeaponInfo({ item }) {
   let { itemStats } = item;

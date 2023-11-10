@@ -1,7 +1,7 @@
 'use client';
 import "./style.scss";
 
-import { ItemCard } from "@/Cards/_ItemCard";
+import { ItemCard } from "@/components/_ItemCard";
 import { usePopupCard } from "@/app/_PopUpCard/PopupCardProvider";
 import { item, sortItemCat } from "@/stats/item/item";
 import { itemTypeList } from "@/stats/item/itemType";

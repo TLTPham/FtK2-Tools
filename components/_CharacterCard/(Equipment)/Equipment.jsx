@@ -1,4 +1,4 @@
-import { EquipmentEntry } from "@/Cards/_CharacterCard/(Equipment)/EquipmentEntry";
+import { EquipmentEntry } from "@/components/_CharacterCard/(Equipment)/EquipmentEntry";
 
 export function Equipment({ equipment }, id) {
   return (

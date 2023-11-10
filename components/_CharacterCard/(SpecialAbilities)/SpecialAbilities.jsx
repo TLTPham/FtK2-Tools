@@ -1,7 +1,7 @@
 import "./style.scss";
 
 import { usePopupCard } from "@/app/_PopUpCard/PopupCardProvider";
-import { AbilityCard } from "@/Cards/_AbilityCard";
+import { AbilityCard } from "@/components/_AbilityCard";
 
 export function SpecialAbilities({ abilities = [], id }) {
   return (
