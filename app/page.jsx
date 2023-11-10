@@ -1,7 +1,4 @@
-export default function page() {
-  return (
-    <div>
-      <h1>Page</h1>
-    </div>
-  )
+import { redirect } from 'next/navigation'
+export default function Page() {
+  redirect('/characters/basic')
 }
