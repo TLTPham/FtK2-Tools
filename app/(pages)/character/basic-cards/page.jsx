@@ -25,7 +25,7 @@ export default function Page() {
   }
 
   return (
-    <div className="grid grid-cols-4 gap-10 p-10">
+    <div className="grid grid-cols-4 gap-10 px-10">
       <div className="character-selector join">
         <select className="btn join-item" id="char-select">
           {Object.entries(character).map(([ key, value ]) =>

@@ -17,11 +17,11 @@ export default function Page() {
   }
 
   return (
-    <>
+    <div className="p-5">
       <ItemLister addItem={addItem}/>
       <div className="item-page">
         {items.map((item, i) => <ItemCard item={item} key={i} removeClick={removeClick(i)}/>)}
       </div>
-    </>
+    </div>
   )
 }
