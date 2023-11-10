@@ -1,5 +1,5 @@
 import './globals.scss'
-import { Navbar, NavbarProvider } from "./_Navbar/Navbar";
+import { Navbar } from "./_Navbar/Navbar";
 import { PopupCardProvider } from "@/app/_PopUpCard/PopupCardProvider";
 import { Toaster } from "react-hot-toast";
 
