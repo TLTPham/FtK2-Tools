@@ -14,6 +14,7 @@
 .entry {
   cursor: pointer;
   @apply flex flex-row border-y rounded-none ;
+
   &:hover {
     border-color: var(--border-secondary);
   }

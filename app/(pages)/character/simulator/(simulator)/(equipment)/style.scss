@@ -3,3 +3,12 @@
   background: var(--bg-secondary);
   @apply border-2 row-span-2 rounded-2xl overflow-hidden;
 }
+
+.entry.danger {
+  //background-color: var(--bg-danger);
+
+  & > div {
+    color: grey;
+    //background-color: var(--bg-danger);
+  }
+}

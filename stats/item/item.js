@@ -1296,7 +1296,7 @@ export const item = {
         baseDamage: 15,
         rollStat: 'vitality',
         damageType: 'physical',
-        traits: [],
+        traits: [ 'twoHanded', ],
         baseStats: []
       },
       family: 'mace',
@@ -1529,24 +1529,24 @@ export const item = {
         moves.volley3
       ],
     }),
-    wetStaff: new Item({
-      name: 'Wet Staff',
-      type: 'weapon',
-      itemStats: {
-        rollStat: 'intelligence',
-        damageType: 'magic',
-        traits: [ 'twoHanded' ],
-        baseStats: []
-      },
-      specialAbilities: [
-        specialAbilities.supportRange
-      ],
-      family: 'staves',
-      moves: [
-        moves.waterBolt4,
-        moves.cure1,
-      ],
-    }),
+    // wetStaff: new Item({
+    //   name: 'Wet Staff',
+    //   type: 'weapon',
+    //   itemStats: {
+    //     rollStat: 'intelligence',
+    //     damageType: 'magic',
+    //     traits: [ 'twoHanded' ],
+    //     baseStats: []
+    //   },
+    //   specialAbilities: [
+    //     specialAbilities.supportRange
+    //   ],
+    //   family: 'staves',
+    //   moves: [
+    //     moves.waterBolt4,
+    //     moves.cure1,
+    //   ],
+    // }),
     wornKnife: new Item({
       name: 'Worn Knife',
       type: 'weapon',

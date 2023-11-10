@@ -7,13 +7,15 @@ import { ItemCard } from "@/components/_ItemCard";
 export function CustomEquipment() {
   const { equipment, setItemType } = useSimulator();
   let { weapon, offhand, trinket, helmet, bodyArmor, gloves, boots } = equipment;
+  let className = (weapon?.itemStats.traits.includes('twoHanded')) ? 'danger' : '';
   return (
     <div className="custom-equipment">
       <div className="font-bold text-3xl title">Equipment</div>
       <div className="flex flex-col gap-10">
         <div className="flex flex-col border">
           <SingleEquipmentEntry item={weapon} type='weapon' displayName="Weapon" setItemType={setItemType}/>
-          <SingleEquipmentEntry item={offhand} type='offhand' displayName="Offhand" setItemType={setItemType}/>
+          <SingleEquipmentEntry item={offhand} type='offhand' displayName="Offhand" setItemType={setItemType}
+                                className={className} fadeText={weapon}/>
           <SingleEquipmentEntry item={trinket} type='trinket' displayName="Trinket" setItemType={setItemType}/>
         </div>
         <div className="flex flex-col">
@@ -27,7 +29,7 @@ export function CustomEquipment() {
   )
 }
 
-function SingleEquipmentEntry({ item, displayName, type, setItemType }) {
+function SingleEquipmentEntry({ item, displayName, type, setItemType, className = '', fadeText }) {
   const { setFunctions } = useSimulator();
   const { setMouseEvents } = usePopupCard();
 
@@ -46,9 +48,9 @@ function SingleEquipmentEntry({ item, displayName, type, setItemType }) {
 
 
   return (
-    <div className="entry" onClick={setOnClick()} {...props}>
+    <div className={`entry ${className}`} onClick={setOnClick()} {...props}>
       <label>{displayName}: </label>
-      <div>{item && item.name} </div>
+      <div>{item ? item.name : fadeText ? fadeText.name : ''} </div>
     </div>
   )
 }
