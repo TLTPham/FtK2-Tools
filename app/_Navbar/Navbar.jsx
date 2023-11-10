@@ -10,7 +10,7 @@ export function Navbar() {
       <div className="navbar-end">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <details className="border-2 rounded-2xl">
+            <details className="navItem">
               <summary>Character</summary>
               <ul className="border-2 p-2">
                 <li><a href="/character/abilities">Abilities</a></li>
@@ -19,16 +19,7 @@ export function Navbar() {
               </ul>
             </details>
           </li>
-          <li>
-            <details className="border-2 rounded-2xl">
-              <summary>Items</summary>
-              <ul className="border-2 p-2">
-                <li><a>Basic Cards</a></li>
-                <li><a>Character </a></li>
-              </ul>
-            </details>
-          </li>
-          <li/>
+          <li><a className="navItem" href="/items">Items</a></li>
         </ul>
       </div>
     </div>

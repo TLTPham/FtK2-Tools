@@ -1,36 +1,28 @@
 'use client';
 import "./style.scss";
-import toast from "react-hot-toast";
 
 import { ItemCard } from "@/Cards/_ItemCard";
 import { usePopupCard } from "@/app/_PopUpCard/PopupCardProvider";
-import { useSimulator } from "@/app/(pages)/character/simulator/SimulatorProvider";
 import { item, sortItemCat } from "@/stats/item/item";
 import { itemTypeList } from "@/stats/item/itemType";
+import { useState } from "react";
 
-export function CustomEquipmentInput({ className }) {
-  const { itemType, setItemType, equipment, setFunctions } = useSimulator();
+export function ItemLister({ addItem }) {
+  const [ itemType, setItemType ] = useState('weapon');
   const { setMouseEvents } = usePopupCard();
 
   const onclick = (item) => {
-    let value = itemType.replace('shield', 'offhand');
-    return () => {
-      let removeOffhand = (value === 'weapon' && item.itemStats?.traits?.includes('twoHanded'));
-      let removeWeapon = (value === 'offhand' && equipment.weapon?.itemStats?.traits?.includes('twoHanded'));
-      (removeOffhand) && setFunctions['offhand'](null);
-      (removeWeapon) && setFunctions['weapon'](null);
-      (value !== 'pipe') ? setFunctions[value](item) : toast.error('You cannot equip a pipe.');
-    }
+    return () => addItem(item)
   }
   const selectOnChange = (e) => {
     setItemType(e.target.value)
   }
   return (
-    <div className={`custom-input ${className}`}>
+    <div className="custom-input">
       <div>
         <div className="font-bold text-3xl title">Equip Items</div>
         <select className="btn w-full rounded-none" id="itemType" onChange={selectOnChange} defaultValue={itemType}>
-          {itemTypeList.map((key) => (![ '1', 'consumable', 'pipe' ].includes(key)) &&
+          {itemTypeList.map((key) => (![ '1' ].includes(key)) &&
             <option key={key} value={key}>{key}</option>)}
         </select>
       </div>

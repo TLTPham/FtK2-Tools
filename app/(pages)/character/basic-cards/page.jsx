@@ -21,9 +21,7 @@ export default function Page() {
     }
   }
   const removeOnClick = (index) => {
-    return () => {
-      setCards(cards => cards.filter((_, i) => i !== index))
-    }
+    return () => setCards(cards => cards.filter((_, i) => i !== index))
   }
 
   return (

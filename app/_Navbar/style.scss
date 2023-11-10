@@ -25,3 +25,10 @@
   min-height: 80px;
   @apply border;
 }
+
+.navItem {
+  @apply border-2 rounded-2xl;
+  &:hover {
+    border-color: var(--border-secondary);
+  }
+}

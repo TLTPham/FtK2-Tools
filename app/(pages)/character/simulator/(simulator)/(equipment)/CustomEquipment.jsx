@@ -38,7 +38,9 @@ function SingleEquipmentEntry({ item, displayName, type, setItemType }) {
     }
 
     return () => {
-      setItemType(type.replace('offhand', 'shield'));
+      let processedType = type.replace('offhand', 'shield');
+      setItemType(processedType);
+      document.getElementById('itemType').value = processedType;
     }
   }
 

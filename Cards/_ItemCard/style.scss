@@ -1,5 +1,5 @@
 .item-card {
-  max-height: 500px;
+  max-height: 550px;
   width: 250px;
   overflow: hidden;
 
@@ -40,7 +40,7 @@
     min-width: 20%;
   }
 
-  .image-line{
+  .image-line {
     min-width: 20%;
     @apply flex flex-row gap-0.5;
   }
@@ -50,7 +50,21 @@
     width: 25px;
   }
 }
-
+.exit-item {
+  position: relative;
+  left: 210px;
+  top: 29px;
+  height: 24px;
+  width: 24px;
+  font-size: 80%;
+  background: var(--bg-danger);
+  border-width: 2px;
+  border-color: var(--border-primary);
+  @apply rounded-md;
+  &:hover {
+    border-color: var(--border-secondary);
+  }
+}
 .item-move {
   @apply border w-full rounded-lg;
   .label {

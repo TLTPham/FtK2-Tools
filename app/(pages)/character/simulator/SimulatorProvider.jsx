@@ -11,7 +11,7 @@ export function SimulatorProvider({ children }) {
   let state = loadState.get();
 
   const [ customCharacter, setCustomCharacter ] = useState(character[state.character ? state.character : 'hunter']);
-  const [ customWeapon, setCustomWeapon ] = useState(item.weapon[state.weapon ? state.weapon : 'walkingStick']);
+  const [ customWeapon, setCustomWeapon ] = useState(item.weapon[state.weapon ? state.weapon : 'simpleBow']);
   const [ customOffhand, setCustomOffhand ] = useState(state.offhand ? item.shield[state.offhand] : null);
   const [ customTrinket, setCustomTrinket ] = useState(state.trinket ? item.trinket[state.trinket] : null);
 
@@ -88,10 +88,36 @@ export function SimulatorProvider({ children }) {
       }
     }
   })
+  const resetSim = () => {
+    setLevel(0)
+    setBlackCandy(0)
+    setSpiritTaffy(0)
+    setCustomCharacter(character.hunter)
+    setCustomWeapon(item.weapon.simpleBow)
+    setCustomOffhand(null)
+    setCustomTrinket(null)
+    setCustomHelmet(null)
+    setCustomBodyArmor(null)
+    setCustomGloves(null)
+    setCustomBoots(null)
+  }
 
   return (
     <SimulatorContext.Provider
-      value={{ equipment, equippedCharacter, setFunctions, level, blackCandy, spiritTaffy, setLevel, setBlackCandy, setSpiritTaffy, itemType, setItemType }}>
+      value={{
+        equipment,
+        equippedCharacter,
+        setFunctions,
+        level,
+        blackCandy,
+        spiritTaffy,
+        setLevel,
+        setBlackCandy,
+        setSpiritTaffy,
+        itemType,
+        setItemType,
+        resetSim
+      }}>
       {children}
     </SimulatorContext.Provider>
   );

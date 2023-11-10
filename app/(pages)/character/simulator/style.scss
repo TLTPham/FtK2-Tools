@@ -1,9 +1,23 @@
-.entry {
-  cursor: pointer;
-  @apply flex flex-row border-y rounded-none ;
+.reset {
+  position: fixed;
+  top: 15px;
+  right: 50%;
+  transform: translate(-50%);
+  z-index: 1100;
+  background-color: var(--bg-danger);
+  @apply border-2 rounded-lg p-2;
   &:hover{
     border-color: var(--border-secondary);
   }
+}
+
+.entry {
+  cursor: pointer;
+  @apply flex flex-row border-y rounded-none ;
+  &:hover {
+    border-color: var(--border-secondary);
+  }
+
   & > * {
 
     pointer-events: none;

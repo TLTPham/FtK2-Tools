@@ -1568,3 +1568,17 @@ export const item = {
     }),
   },
 }
+
+export function sortItemCat(type) {
+  let sortedItems = Object.entries(item[type]).map(([ key, value ]) => [ key, value ]).filter(([ key, value ]) => key !== '1');
+  sortedItems.sort((a, b) => {
+    if (a[1].name < b[1].name) {
+      return -1;
+    }
+    if (a[1].name > b[1].name) {
+      return 1;
+    }
+    return 0;
+  });
+  return sortedItems;
+}
