@@ -15,7 +15,7 @@ export function MoveContent(props) {
 
 function MoveDiv({ item, index, additionalDamage }) {
   let move = item.moves[index];
-  let showDamage = (move.type === 'attack' && move.damageAmpFloor !== 0 && move.damageAmpCeil !== 0);
+  let showDamage = (move.type === 'attack' && move.damageAmpCeil !== 0);
   return (
     <div className="item-move border">
       <div className="label">{move.name}</div>

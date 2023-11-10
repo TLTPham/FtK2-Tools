@@ -26,6 +26,20 @@
     outline: none;
   }
 }
+.support{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  overflow: hidden;
+  width: 45px;
+  transition-duration: 500ms;
+  @apply rounded-2xl;
+
+  &:hover {
+    width: 145px;
+    transition-duration: 500ms;
+  }
+}
 .title {
   background: var(--bg-secondary);
   text-align: center;

@@ -50,7 +50,7 @@ function SingleEquipmentEntry({ item, displayName, type, setItemType, className 
   return (
     <div className={`entry ${className}`} onClick={setOnClick()} {...props}>
       <label>{displayName}: </label>
-      <div>{item ? item.name : fadeText ? fadeText.name : ''} </div>
+      <div>{item ? item.name : className !== '' ? fadeText.name : ''} </div>
     </div>
   )
 }

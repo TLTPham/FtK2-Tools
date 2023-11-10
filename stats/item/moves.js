@@ -320,11 +320,8 @@ export const moves = {
     type: 'attack',
     rollCount: 1,
     rollStat: 'strength',
-    targetText: 'Single Target',
-    damageAmpFloor: 0,
     damageAmpCeil: 100,
     effects: [ 'Bleed' ],
-    tag: [ 'single' ]
   }),
   shockArrow1: new Move({
     name: 'Shock Arrow',
