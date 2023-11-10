@@ -1,0 +1,42 @@
+.entry {
+  cursor: pointer;
+  @apply flex flex-row border-y rounded-none ;
+  &:hover{
+    border-color: var(--border-secondary);
+  }
+  & > * {
+
+    pointer-events: none;
+    user-select: none;
+    @apply px-2 py-1;
+  }
+
+  & > label {
+    background: var(--bg-secondary);
+    text-align: right;
+    width: 125px;
+    @apply border-r-2;
+  }
+
+  & > div {
+    text-align: center;
+    height: 35px;
+    background: var(--bg-primary);
+    @apply border flex-grow;
+  }
+}
+
+.btn {
+  border-width: 2px;
+  border-color: var(--border-primary);
+
+  &:hover {
+    border-color: var(--border-secondary);
+  }
+}
+
+.sim-column {
+  width: 400px;
+  gap: 50px;
+  @apply flex flex-col;
+}

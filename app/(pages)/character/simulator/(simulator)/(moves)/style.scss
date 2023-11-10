@@ -1,0 +1,12 @@
+.item-move {
+  min-height: 100px;
+}
+
+.image-line {
+  img {
+    height: 40px;
+    width: 40px;
+  }
+  min-width: 20%;
+  @apply flex flex-row gap-0.5 mb-2;
+}

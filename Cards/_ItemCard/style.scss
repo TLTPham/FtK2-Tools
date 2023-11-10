@@ -1,0 +1,87 @@
+.item-card {
+  max-height: 500px;
+  width: 250px;
+  overflow: hidden;
+
+  @apply border rounded-2xl;
+
+  .title {
+    font-size: 120%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 33px;
+    @apply px-4;
+  }
+
+  .rarity {
+    font-size: 75%;
+    height: 23px;
+    background: var(--bg-secondary);
+    @apply px-3 py-0.5 border-b;
+  }
+
+  .damage {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 80%;
+    height: 28px;
+    @apply px-3 py-0.5 border-b-2;
+  }
+
+  .main {
+    max-height: 250px;
+  }
+
+  .image-line {
+    min-width: 20%;
+  }
+
+  .image-line{
+    min-width: 20%;
+    @apply flex flex-row gap-0.5;
+  }
+
+  img {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+.item-move {
+  @apply border w-full rounded-lg;
+  .label {
+    position: relative;
+    height: 25px;
+    top: -7px;
+    float: left;
+    left: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background: var(--bg-secondary);
+    @apply border rounded-lg;
+  }
+
+
+  .content {
+    font-size: 75%;
+    @apply flex flex-col gap-1 rounded-lg;
+  }
+
+  .rolls {
+    position: relative;
+    float: right;
+    right: 10px;
+    bottom: 5px;
+    @apply flex flex-row gap-1 rounded-lg;
+  }
+}
+
+.item-rarity {
+  background: var(--bg-secondary);
+  @apply flex flex-row justify-between border-b-2 px-4;
+}

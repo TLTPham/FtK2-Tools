@@ -1,0 +1,14 @@
+img {
+  pointer-events: none;
+  width: 25px;
+  height: 25px;
+}
+label.join-item, div.join-item{
+  width: 60px;
+  overflow: hidden;
+  pointer-events: none;
+}
+select.join-item{
+  width: 70px;
+  @apply select-bordered border-2
+}

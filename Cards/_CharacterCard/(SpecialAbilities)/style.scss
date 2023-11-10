@@ -1,0 +1,8 @@
+.special-ability {
+  cursor: pointer;
+  user-select: none;
+  @apply border rounded px-1;
+  &:hover {
+    border-color: var(--border-secondary);
+  }
+}

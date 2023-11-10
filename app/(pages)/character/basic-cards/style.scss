@@ -1,0 +1,16 @@
+.character-selector {
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+
+  & > .btn {
+    border-width: 2px;
+    border-color: var(--border-primary);
+
+    &:hover {
+      border-color: var(--border-secondary);
+    }
+  }
+}

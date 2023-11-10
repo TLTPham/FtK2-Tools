@@ -1,0 +1,27 @@
+.menu {
+  gap: 1rem;
+
+  & > li > a {
+    width: 150px;
+  }
+}
+
+.navbar {
+  position: fixed;
+  height: 5vh;
+  min-height: 80px;
+  background: var(--bg-secondary);
+  z-index: 100;
+  min-width: 1280px;
+  @apply border-b-2;
+  & > div, ul, li {
+    background: var(--bg-secondary);
+  }
+}
+
+.navbar-spacer {
+  width: 100%;
+  height: 5vh;
+  min-height: 80px;
+  @apply border;
+}

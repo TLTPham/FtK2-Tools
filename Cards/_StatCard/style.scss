@@ -1,0 +1,16 @@
+.stat-card {
+  max-height: 200px;
+  width: 400px;
+  border-width: 2px;
+  overflow: hidden;
+
+  @apply rounded-2xl;
+
+  & > .title {
+    font-size: 120%;
+  }
+
+  & > .content {
+    @apply rounded-b-2xl m-2;
+  }
+}

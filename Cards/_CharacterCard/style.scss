@@ -1,0 +1,32 @@
+.character-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 750px;
+  overflow: hidden;
+
+  @apply rounded-2xl border-2 gap-1;
+  &> .title{
+    font-size: 130%;
+    @apply border-b-2;
+  }
+  & > .subtitle{
+    @apply border-y-2;
+  }
+}
+
+.exit {
+  position: relative;
+  left: 360px;
+  top: 38px;
+  height: 30px;
+  width: 30px;
+  background: var(--bg-primary);
+  border-width: 2px;
+  border-color: var(--border-primary);
+  @apply rounded-md;
+  &:hover{
+    border-color: var(--border-secondary);
+  }
+}

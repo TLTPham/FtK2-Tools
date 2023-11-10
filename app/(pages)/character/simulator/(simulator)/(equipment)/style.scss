@@ -1,0 +1,5 @@
+.custom-equipment {
+  height: 350px;
+  background: var(--bg-secondary);
+  @apply border-2 row-span-2 rounded-2xl overflow-hidden;
+}
