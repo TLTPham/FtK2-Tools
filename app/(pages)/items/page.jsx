@@ -2,7 +2,6 @@
 import "./style.scss"
 import { useState } from "react";
 
-import { item } from "@/stats/item/item";
 import { ItemCard } from "@/components/_ItemCard";
 import { ItemLister } from "@/app/(pages)/items/(itemLister)/ItemLister";
 

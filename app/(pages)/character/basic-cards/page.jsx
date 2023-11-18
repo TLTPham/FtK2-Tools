@@ -27,12 +27,12 @@ export default function Page() {
   return (
     <div className="grid grid-cols-4 gap-10 px-10">
       <div className="character-selector join">
-        <select className="btn join-item" id="char-select">
+        <select className=" join-item" id="char-select">
           {Object.entries(character).map(([ key, value ]) =>
             <option key={key} value={key}>{value.name}</option>
           )}
         </select>
-        <button className="btn join-item" onClick={addOnClick(cards, setCards)}>Add</button>
+        <button className="" onClick={addOnClick(cards, setCards)}>Add</button>
       </div>
       {cards.map((char, index) =>
         <CharacterCard key={char + index} character={character[char]} removeClick={removeOnClick(index)}/>)}

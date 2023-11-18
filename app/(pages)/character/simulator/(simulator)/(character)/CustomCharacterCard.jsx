@@ -16,14 +16,14 @@ export function CustomCharacterCard() {
 
   return (
     <div className="custom-character">
-      <select className="btn w-full rounded-none rounded-t-xl" id="char-select" onClick={setBaseChar}>
+      <select className="w-full rounded-none rounded-t-xl text-xl" id="char-select" onClick={setBaseChar}>
         {Object.entries(character).map(([ key, value ]) =>
           <option key={key} value={key}>{value.name}</option>
         )}
       </select>
       <CustomStatBar baseStats={equipment.character.stats} stats={equippedCharacter.stats}/>
       <CombatBar combatStats={equippedCharacter.combatStats}/>
-      <div className="font-bold text-2xl subtitle">Special Abilities</div>
+      <div className="font-bold text-2xl subtitle rounded-none">Special Abilities</div>
       <SpecialAbilities abilities={equipment.character.specialAbilities}/>
     </div>
   )

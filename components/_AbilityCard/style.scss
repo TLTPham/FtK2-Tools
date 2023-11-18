@@ -3,11 +3,13 @@
   width: 400px;
   border-width: 2px;
   overflow: hidden;
+  background-color: var(--bg-primary);
 
   @apply rounded-2xl;
 
   & > .title {
     font-size: 120%;
+    @apply rounded-b-none
   }
 
   & > .content {

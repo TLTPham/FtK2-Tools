@@ -15,7 +15,7 @@ export function StatBar({ stats, id }) {
 function StatBarStat({ stat, value }) {
   const { setMouseEvents } = usePopupCard();
   return (
-    <div className="grid grid-cols-2 stat-bar-stat" {...setMouseEvents(<StatCard stat={stat}/>)}>
+    <div className="grid grid-cols-2 stat-bar-stat ui" {...setMouseEvents(<StatCard stat={stat}/>)}>
       <Image className="attribute-stat" src={statImage[stat]} alt="Awareness" width="auto" height="auto"/>
       <span className="text-2xl text-center" style={{ width: '20px' }}>{value}</span>
     </div>

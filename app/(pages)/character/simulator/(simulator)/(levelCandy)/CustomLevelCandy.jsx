@@ -26,26 +26,26 @@ export function LevelCandy() {
   let levelCount = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ];
   let candyCount = [ 0, 1, 2, 3, 4, 5, 6 ];
   return (
-    <div className="flex flex-row justify-between">
+    <div className="candy-bar">
       <div className="join">
-        <label className="btn join-item">Level:</label>
-        <select className="btn join-item" defaultValue={level} onChange={levelOnChange} id="levelSelect">
+        <label className="label">Lv:</label>
+        <select className="join-item" defaultValue={level} onChange={levelOnChange} id="levelSelect">
           {levelCount.map((key) => <option key={key + 'level'} value={key}>{key}</option>)}
         </select>
       </div>
       <div className="join">
-        <div className="join-item btn">
+        <div className="label">
           <Image className="" src={candyImage.blackCandy} alt="Black Candy" width="auto" height="auto"/>
         </div>
-        <select className="btn join-item" defaultValue={blackCandy} onChange={blackCandyOnChange} id="blackCandySelect">
+        <select className="join-item" defaultValue={blackCandy} onChange={blackCandyOnChange} id="blackCandySelect">
           {candyCount.map((key) => <option key={key + 'blackCandy'} value={key}>{key}</option>)}
         </select>
       </div>
       <div className="join">
-        <div className="join-item btn">
+        <div className="label ">
           <Image className="" src={candyImage.spiritTaffy} alt="Spirit Taffy" width="auto" height="auto"/>
         </div>
-        <select className="btn join-item" defaultValue={spiritTaffy} onChange={spiritTaffyOnChange} id="spiritTaffySelect">
+        <select className=" join-item" defaultValue={spiritTaffy} onChange={spiritTaffyOnChange} id="spiritTaffySelect">
           {candyCount.map((key) => <option key={key + 'spiritTaffy'} value={key}>{key}</option>)}
         </select>
       </div>

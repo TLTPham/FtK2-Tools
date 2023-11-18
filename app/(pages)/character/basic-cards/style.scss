@@ -1,16 +1,25 @@
 .character-selector {
   position: fixed;
-  top: 1.5vh;
+  top: 1vh;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 100;
+  z-index: 1100;
+  background-color: var(--bg-primary-90);
+  border-radius: 8px;
 
-  & > .btn {
+  @apply p-3;
+
+  & * {
+    border-radius: 8px;
+  }
+
+  & > select{
     border-width: 2px;
-    border-color: var(--border-primary);
+    @apply rounded-r-none p-1;
+  }
 
-    &:hover {
-      border-color: var(--border-secondary);
-    }
+  & > button {
+    border-width: 2px;
+    @apply rounded-l-none p-1;
   }
 }

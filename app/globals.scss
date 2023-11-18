@@ -1,12 +1,13 @@
+@use 'contextMenu';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   --text-primary: #d7d7d7;
+  --text-secondary: #C2C2C2C2;
   --text-contrast: #eedd8a;
-
-  --ui-bg-contrast: #896fa6;
 
   --border-primary: #756f59;
   --border-secondary: #eedd8a;
@@ -15,36 +16,78 @@
   --scroll-color: #896fa6;
 
   --bg-primary: #292829;
+  --bg-primary-50: #29282960;
+  --bg-primary-75: #29282990;
+  --bg-primary-90: #292829bb;
   --bg-secondary: #080808;
+  --bg-secondary-50: #08080860;
+  --bg-secondary-75: #08080890;
+  --bg-secondary-90: #080808bb;
+  --bg-contrast: #896fa6;
   --bg-danger: #98383f;
 }
 
 * {
   color: var(--text-primary);
   border-color: var(--border-primary);
-  &:focus{
+
+  &:focus {
     outline: none;
   }
 }
-.support{
+
+a {
+  color: var(--text-contrast);
+}
+
+button, input, select, textarea, .ui {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-primary);
+  cursor: pointer;
+
+  &.fade {
+    background-color: var(--bg-primary-90);
+  }
+
+  &:hover {
+    background: var(--bg-contrast);
+    border-color: var(--border-secondary);
+
+    & option {
+      background: var(--bg-secondary);
+      border-color: var(--border-secondary);
+    }
+  }
+}
+
+html {
+  background-color: var(--bg-primary);
+  background-image: url(../public/backgrounds/ftk2_base.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.support {
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  right: 10%;
+  bottom: 20%;
   overflow: hidden;
   width: 45px;
   transition-duration: 500ms;
   @apply rounded-2xl;
 
-  &:hover {
-    width: 145px;
-    transition-duration: 500ms;
-  }
+  //&:hover {
+  //  width: 145px;
+  //  transition-duration: 500ms;
+  //}
 }
+
 .title {
   background: var(--bg-secondary);
   text-align: center;
   width: 100%;
-  @apply p-1 border-b-2;
 }
 
 .subtitle {
@@ -82,6 +125,7 @@
 
 .magic {
   color: #896fa6;
+
   & * {
     color: #896fa6;
   }

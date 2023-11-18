@@ -18,7 +18,7 @@ function StatBarStat({ stat, baseValue, value }) {
   const { setMouseEvents } = usePopupCard();
   let className = baseValue > value ? 'red' : baseValue < value ? 'green' : '';
   return (
-    <div className={`grid grid-cols-2 custom-stat-bar-stat ${className}`} {...setMouseEvents(<StatCard stat={stat}/>)}>
+    <div className={`grid grid-cols-2 custom-stat-bar-stat ui ${className}`} {...setMouseEvents(<StatCard stat={stat}/>)}>
       <Image className="attribute-stat" src={statImage[stat]} alt="Awareness" width="auto" height="auto"/>
       <span className={`text-2xl text-center`} style={{ width: '20px' }}>{value}</span>
     </div>

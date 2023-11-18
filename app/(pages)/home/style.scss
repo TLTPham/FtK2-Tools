@@ -1,0 +1,7 @@
+.display-card {
+  background: var(--bg-secondary-90);
+  @apply border flex flex-col gap-3 p-5;
+  & > .header{
+    @apply text-2xl text-center;
+  }
+}

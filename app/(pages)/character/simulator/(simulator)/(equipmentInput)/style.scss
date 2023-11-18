@@ -1,5 +1,6 @@
 .custom-input {
   height: 750px;
+  background-color: var(--bg-primary);
   @apply border-2 rounded-2xl overflow-hidden;
   & > div:first-child {
     height: 12%;
@@ -20,11 +21,4 @@
   text-align: center;
 
   @apply border;
-  &:hover {
-    &:active {
-      background: #756f59;
-    }
-
-    border-color: var(--border-secondary);
-  }
 }

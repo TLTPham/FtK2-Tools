@@ -25,11 +25,4 @@
   text-align: center;
 
   @apply border;
-  &:hover {
-    &:active {
-      background: #756f59;
-    }
-
-    border-color: var(--border-secondary);
-  }
 }

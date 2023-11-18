@@ -1,12 +1,19 @@
-.reset {
+div.reset {
   position: fixed;
-  top: 15px;
-  right: 50%;
-  transform: translate(-50%);
+  top: 1vh;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1100;
+  background-color: var(--bg-primary-90);
+  border-radius: 8px;
+
+  @apply p-3;
+}
+
+button.reset {
   background-color: var(--bg-danger);
   @apply border-2 rounded-lg p-2;
-  &:hover{
+  &:hover {
     border-color: var(--border-secondary);
   }
 }
@@ -17,6 +24,9 @@
 
   &:hover {
     border-color: var(--border-secondary);
+    & > div {
+      background-color: var(--bg-contrast);
+    }
   }
 
   & > * {
@@ -41,17 +51,11 @@
   }
 }
 
-.btn {
-  border-width: 2px;
-  border-color: var(--border-primary);
-
-  &:hover {
-    border-color: var(--border-secondary);
-  }
-}
-
 .sim-column {
   width: 400px;
   gap: 50px;
   @apply flex flex-col;
+  &.fade {
+    background-color: var(--bg-primary-90);
+  }
 }

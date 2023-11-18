@@ -12,7 +12,9 @@ export default function Page() {
   const { resetSim } = useSimulator();
   return (
     <>
-      <button className="reset" onClick={resetSim}>Reset Sim</button>
+      <div className="reset">
+        <button className="reset" onClick={resetSim}>Reset Sim</button>
+      </div>
       <div className="flex p-5">
         <div className="flex flex-row gap-5">
           <div className="sim-column">

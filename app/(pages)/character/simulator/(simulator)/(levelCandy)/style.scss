@@ -3,12 +3,38 @@ img {
   width: 25px;
   height: 25px;
 }
-label.join-item, div.join-item{
+
+.join {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+
+  & > .label {
+    height: 30px;
+    width: 30px;
+    background-color: var(--bg-primary);
+    @apply border-2 flex justify-center items-center;
+  }
+
+  & > select {
+    height: 30px;
+  }
+}
+
+label.join-item, div.join-item {
   width: 60px;
+  height: 30px;
   overflow: hidden;
   pointer-events: none;
 }
-select.join-item{
+
+select.join-item {
   width: 70px;
-  @apply select-bordered border-2
+}
+.candy-bar{
+  background-color: var(--bg-primary-90);
+  border-radius: 8px;
+  @apply flex flex-row justify-between p-3;
 }

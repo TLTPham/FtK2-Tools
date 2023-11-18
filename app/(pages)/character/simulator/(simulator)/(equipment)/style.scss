@@ -1,14 +1,22 @@
 .custom-equipment {
-  height: 350px;
-  background: var(--bg-secondary);
+  height: 338px;
+  background-color: var(--bg-primary);
   @apply border-2 row-span-2 rounded-2xl overflow-hidden;
+}
+
+.entry {
+  @apply rounded-none;
+  & > * {
+    @apply rounded-none;
+  }
+
+  &.danger > div {
+    color: grey;
+  }
 }
 
 .entry.danger {
   //background-color: var(--bg-danger);
 
-  & > div {
-    color: grey;
-    //background-color: var(--bg-danger);
-  }
+
 }

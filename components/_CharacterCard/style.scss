@@ -5,6 +5,7 @@
   width: 400px;
   height: 750px;
   overflow: hidden;
+  background-color: var(--bg-primary);
 
   @apply rounded-2xl border-2 gap-1;
   &> .title{

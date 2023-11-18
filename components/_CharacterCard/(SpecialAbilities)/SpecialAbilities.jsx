@@ -13,7 +13,7 @@ export function SpecialAbilities({ abilities = [], id }) {
 function SpecialAbilitiesEntry({ ability }) {
   const { setMouseEvents } = usePopupCard();
   return (
-    <div className="text-xl special-ability" {...setMouseEvents(<AbilityCard ability={ability}/>)}>
+    <div className="text-xl special-ability ui" {...setMouseEvents(<AbilityCard ability={ability}/>)}>
       {ability.type}: {ability.name}
     </div>
   )
